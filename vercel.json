@@ -4,7 +4,7 @@
       {
         "src": "genome_quest/wsgi.py", 
         "use": "@vercel/python",
-        "config": { "maxLambdaSize": "15mb" }
+        "config": { "maxLambdaSize": "15mb", "runtime": "Python3.9" }
     }
     ],
     "routes": [
