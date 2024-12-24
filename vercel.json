@@ -1,0 +1,16 @@
+{
+    "version": 1,
+    "builds": [
+      {
+        "src": "genome_quest/wsgi.py", 
+        "use": "@vercel/python",
+        "config": { "maxLambdaSize": "15mb" }
+    }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "genome_quest/wsgi.py"
+        }
+    ]
+}
